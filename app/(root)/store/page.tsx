@@ -10,7 +10,7 @@ import BusinessDetailsForm from './components/BusinessDetailsForm'
 import StoreAddressForm from './components/StoreAddressForm'
 
 
-const page = () => {
+const Page = () => {
   return (
     <section className='p-7 space-y-7 max-w-4xl mx-auto '>
         <TitleText
@@ -41,7 +41,7 @@ const page = () => {
           <AccordionTrigger>Bank Details</AccordionTrigger>
           <AccordionContent>
               <article>
-                    <span>You haven't added any bank details yet</span>
+                    <span>You havent added any bank details yet</span>
               </article>
           </AccordionContent>
         </AccordionItem>
@@ -51,4 +51,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

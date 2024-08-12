@@ -10,7 +10,7 @@ import Image from 'next/image';
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
-const page = () => {
+const Page = () => {
 
 
   const form = useForm<AccountType>({ 
@@ -75,4 +75,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
