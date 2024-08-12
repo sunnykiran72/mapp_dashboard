@@ -1,0 +1,12 @@
+
+.selected-section {
+    fill: rgba(0, 0, 0, 0.286);
+    stroke: rgba(255, 255, 255, 0.594);
+}
+  
+.selected-section:hover {
+    cursor: pointer;
+    fill:rgb(176, 245, 176) ;
+    stroke: green;
+    stroke-width: 2;
+}
