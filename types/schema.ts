@@ -46,3 +46,16 @@ export const StoreAddressSchema = z.object({
 })
 
 export type StoreAddressType = z.infer<typeof StoreAddressSchema>;
+
+
+export const StoreMapSchema = z.object({
+     id : z.string(),
+     color : z.string(),
+     title : z.string(),
+     logo : z.string().optional(),
+     category : z.string(),
+     cordinates : z.array(z.number()).length(2) // [ x, y ]
+});
+
+export type StoreMapType = z.infer<typeof StoreMapSchema>;
+

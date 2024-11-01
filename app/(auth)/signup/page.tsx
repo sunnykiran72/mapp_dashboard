@@ -11,7 +11,9 @@ import CustomInput from '@/components/custom/CustomInput'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
 
-const Page = () => {
+
+
+const Page = () => { 
 
    const form = useForm<RegisterType>({
     resolver : zodResolver(RegisterSchema) ,

@@ -23,7 +23,10 @@ const CustomInput:FC<InputProps<any>> = ({
     control , required = true, label ,
     description ,leading ,trailing , showTextArea,
     subLabel , name, placeholder , type,  ...props }) => {
+
+        const isRequired = required && !props.disabled; 
   return (
+    
     <FormField
     control={control}
     name={name as  string}
@@ -45,7 +48,7 @@ const CustomInput:FC<InputProps<any>> = ({
             ?   <Textarea 
                     {...field}
                     placeholder={placeholder}
-                    required={required}
+                    required={isRequired}
                     />
                :
             <Input 
@@ -54,7 +57,7 @@ const CustomInput:FC<InputProps<any>> = ({
                 placeholder={placeholder}
                 trailing = {trailing}
                 {...props}
-                required={required}
+                required={isRequired}
                 type={type}
                 className='no-spinner '
                 onChange={(v) => {

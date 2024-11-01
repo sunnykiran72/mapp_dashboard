@@ -10,8 +10,3 @@
     stroke: green;
     stroke-width: 2;
 }
-
-
-.custom-cursor {
-    cursor: url('/gps.png') 10 10, pointer;
-  }
